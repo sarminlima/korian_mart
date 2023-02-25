@@ -83,7 +83,7 @@
 .hamburger-inner::after {
   width: 26px;
   height: 2px;
-  background-color: #7C99C1;
+  background-color: #fff;
   border-radius: 0;
   position: absolute;
   transition-property: transform;
@@ -1934,13 +1934,13 @@ a:focus {
 
 /*-------- 1.2 Buttons --------*/
 a li .wishlist_button {
-  background: #e8f5ff;
+  background: #7C99C1;
   outline: none;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   padding: 12px 25px;
-  color: #f7C99C133;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -1948,14 +1948,14 @@ a.btn_1,
 .btn_1 {
   border: none;
   color: #fff;
-  background: #ffe8e8;
+  background: #7C99C1;
 
   outline: none;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   padding: 12px 25px;
-  color: #7C99C1;
+  color: #fff;
   font-weight: 500;
   text-align: center;
   font-size: 14px;
@@ -1977,8 +1977,9 @@ a.btn_1:focus,
 }
 a.btn_1:hover,
 .btn_1:hover {
-  background-color: #7C99C1;
-  color: #111 !important;
+  background-color: #fff;
+  color: #7C99C1 !important;
+  border: 1px solid #7C99C1;
 }
 a.btn_1.full-width,
 .btn_1.full-width {
@@ -1986,6 +1987,12 @@ a.btn_1.full-width,
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
+}
+
+a.btn_1.full-width:hover {
+  background-color: #c4d5ec;
+  color: #fff!important;
+  border: none
 }
 a.btn_1.medium,
 .btn_1.medium {
@@ -2110,7 +2117,7 @@ header .main_header {
 }
 @media (max-width: 991px) {
   header .main_header #logo {
-    text-align: center;
+    display: flex;
   }
   header .main_header #logo a img {
     height: 30px;
@@ -2149,7 +2156,7 @@ header .main_header a.phone_top strong span {
 header .main_header nav a.open_close {
   position: absolute;
   top: 20px;
-  left: 15px;
+  right: 15px;
   display: none;
 }
 @media (max-width: 991px) {
@@ -2329,7 +2336,7 @@ header ul.top_tools > li .dropdown-access .dropdown-menu a.btn_1.outline {
 header ul.top_tools > li .dropdown-cart .dropdown-menu a.btn_1:hover,
 header ul.top_tools > li .dropdown-access .dropdown-menu a.btn_1:hover {
   color: gray;
-  background-color: #7C99C1;
+  background-color: #fff;
 }
 header .main_nav {
   position: relative;
@@ -2423,6 +2430,12 @@ header .sticky_element {
 }
 .most-top-right-text {
   border-bottom: 1px solid #E9EEAC;
+}
+
+@media (max-width: 991px) {
+  .most-top {
+    display: none;
+  }
 }
 .reward-login a {
   color: #E9EEAC;
@@ -3067,9 +3080,17 @@ nav a.open_close#close_in > i:hover {
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
-  .main-menu.show {
-    transform: translateX(0);
-    left: 0;
+  @media (max-width: 991px) {
+    .main-menu.show {
+      transform: translateX(0);
+      left: 55%;
+    }
+  }
+  @media (max-width: 767px) {
+    .main-menu.show {
+      transform: translateX(0);
+      left: 0%;
+    }
   }
 
   .main-menu .show-submenu + ul,
@@ -3241,23 +3262,11 @@ nav a.open_close#close_in > i:hover {
 .categories-show {
   display: none;
 }
-.new-offer-hide {
-  display: none;
-}
-.new-offer-show {
-  display: block;
-}
 @media (max-width: 767px) {
   .categories {
     display: none;
   }
-  .new-offer-hide {
-    display: block;
-  }
   .categories-mobile {
-    display: none;
-  }
-  .new-offer-show {
     display: none;
   }
 }
@@ -6523,7 +6532,7 @@ a.social_bt.google:before {
 }
 
 /*-------- 3.7 Footer --------*/
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .collapse.dont-collapse-sm {
     display: block !important;
     height: auto !important;
@@ -7573,6 +7582,12 @@ textarea {
   border-radius: 5px;
   border: 1px solid #ece5e5;
   padding: 6px 15px;
+}
+
+.btn-custom-4:hover {
+  color: #7C99C1;
+  background-color: #fff;
+  border: 1px solid #7C99C1;
 }
 
 .btn-custom-3:hover {

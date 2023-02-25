@@ -281,7 +281,7 @@
     lineTension: .3,
     datasets: [{
       label: "Orders",
-      color: "#854fff",
+      color: "#7C99C1",
       background: "transparent",
       data: [92, 105, 125, 85, 110, 106, 131, 105, 110, 131, 105, 110]
     }]
