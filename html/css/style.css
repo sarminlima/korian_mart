@@ -2438,8 +2438,8 @@ header.version_1 .main_header a.phone_top:before {
 }
 
 #logo a img {
-	width: 353px;
-	height: 130px;
+  width: 302px;
+  height: 75px;
 }
 @media (max-width: 767px) {
   header.version_1 .main_header ul.top_tools {
