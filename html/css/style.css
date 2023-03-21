@@ -6648,7 +6648,7 @@ footer .links ul li a:hover {
   -ms-transform: translate(5px, 0);
   -o-transform: translate(5px, 0);
   transform: translate(5px, 0);
-  color: rgb(5, 5, 5);
+  color: #ddd;
   opacity: 1;
 }
 footer .links ul li a:hover:after {
